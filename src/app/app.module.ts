@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { TaskItemComponent } from './task-item/task-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TaskService } from './task.service';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, FontAwesomeModule],
@@ -20,6 +21,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     TasksComponent,
     TaskItemComponent
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [TaskService]
 })
 export class AppModule {}
