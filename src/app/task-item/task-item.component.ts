@@ -15,4 +15,8 @@ export class TaskItemComponent implements OnInit {
   ngOnInit() {
   }
 
+  onDelete()  {
+    console.log("onDelete called");
+  }
+
 }
