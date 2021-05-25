@@ -7,14 +7,15 @@ import { TASKS } from './mock-tasks';
 
 @Injectable()
 export class TaskService {
-  private apiUrl1 = 'http://localhost:5000/tasks';
-  private apiUrl = './db.json';
+  private apiUrl = 'http://localhost:5000/tasks';
+  private dbFile= '../db.json';
 
   constructor(private http: HttpClient) {}
 
   getTasks(): Observable<Task[]> {
-    //const tasks = of(TASKS);
-    //return tasks;
-    return this.http.get<Task[]>(this.apiUrl1);
+    const tasks = of(TASKS);
+    return tasks;
+    //return this.http.get<Task[]>(this.apiUrl);
+    //return this.http.get<Task[]>(this.dbFile);
   }
 }
