@@ -16,7 +16,7 @@
   <p>{{ task.day }}</p>
 </div>
 -->
-<div [ngClass]="{ reminder: task.reminder}" class="task">
+<div [ngClass]="{ reminder: task.reminder }" class="task">
   <h3>{{task.text}} 
     <fa-icon 
       (click)="onDelete(task)" 
@@ -25,4 +25,5 @@
     </fa-icon> 
   </h3> 
   <p>{{ task.day }}</p>
+  <p>Reminder: {{ task.reminder }}</p>
 </div>
