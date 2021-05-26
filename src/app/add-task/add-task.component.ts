@@ -9,6 +9,7 @@ export class AddTaskComponent implements OnInit {
   text: string;
   day: string;
   reminder: boolean = false;
+  
   constructor() { }
 
   ngOnInit() {
