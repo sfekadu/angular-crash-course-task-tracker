@@ -9,7 +9,11 @@
   >
   </app-button>
   -->
-  <app-button color="green" text="Add" (btnClick)="toggleAddTask()"
-    >Add
+  <app-button 
+    color="{{ showAddTask ? 'red' : 'green' }}" 
+    text="{{ showAddTask ? 'Close' : 'Add' }}" 
+    (btnClick)="toggleAddTask()"
+  >
+  Add
   </app-button>
 </header>

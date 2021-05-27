@@ -12,12 +12,17 @@ export class HeaderComponent implements OnInit {
   showAddTask: boolean;
   subscription: Subscription;
 
-  constructor(private uiService: UiService) {}
+  constructor(private uiService: UiService) {
+    this.subscription = this.uiService.onToggle().subscribe( value => this.showAddTask = value);
+  }
 
   ngOnInit() {}
 
   toggleAddTask(){
     //console.log("toggle");
     this.uiService.toggleAddTask();
+    
+    //bad way to achieve behaviour.  need subscription on constructor to use event steam???
+    //this.showAddTask = !this.showAddTask;
   }
 }
