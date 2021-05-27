@@ -27,4 +27,9 @@ export class TasksComponent implements OnInit {
     console.log(task);
     task.reminder = !task.reminder;
   }
+
+  addTask(task: Task) {
+    console.log(task);
+    
+  }
 }

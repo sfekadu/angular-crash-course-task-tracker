@@ -30,11 +30,13 @@ export class AddTaskComponent implements OnInit {
       reminder: this.reminder
     }
 
-    //@todo - emit EventEmitter
+    this.onAddTask.emit(newTask);
 
-    this.text="";
-    this.day="";
+    //clear form for next new task
+    this.text='';
+    this.day='';
     this.reminder=false;
+
   }
 
 }
