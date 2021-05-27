@@ -16,6 +16,7 @@ import { TaskItemComponent } from './task-item/task-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AddTaskComponent } from './add-task/add-task.component';
 import { AboutComponent } from './about/about.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   {path:'', component: TasksComponent},
@@ -38,7 +39,8 @@ const appRoutes: Routes = [
     TasksComponent,
     TaskItemComponent,
     AddTaskComponent,
-    AboutComponent
+    AboutComponent,
+    FooterComponent
   ],
   bootstrap: [AppComponent],
   providers: [TaskService, UiService]
