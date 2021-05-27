@@ -18,3 +18,5 @@ ng build
 > [Load Local JSON With HttpClient on Stackblitz - Ole Ersoy - Medium] (https://fireflysemantics.medium.com/load-local-json-with-httpclient-on-stackblitz-5461f4a20ac)
 
 [Understanding Subjects] (http://ncjamieson.com/understanding-subjects)
+
+[Object array with push](https://stackoverflow.com/questions/38225579/typescript-add-object-to-array-with-push)
