@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
+
+import { TaskService } from './task.service';
+import { UiService } from './ui.service';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -10,12 +14,21 @@ import { HeaderComponent } from './header/header.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { TaskItemComponent } from './task-item/task-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { TaskService } from './task.service';
 import { AddTaskComponent } from './add-task/add-task.component';
-import { UiService } from './ui.service';
+import { AboutComponent } from './about/about.component';
+
+const appRoutes: Routes = [
+  {path:'', component: TasksComponent}
+]
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, FontAwesomeModule, HttpClientModule],
+  imports: [
+    BrowserModule, 
+    FormsModule, 
+    FontAwesomeModule, 
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes, {enableTracing: true})
+  ],
   declarations: [
     AppComponent,
     HelloComponent,
@@ -23,7 +36,8 @@ import { UiService } from './ui.service';
     HeaderComponent,
     TasksComponent,
     TaskItemComponent,
-    AddTaskComponent
+    AddTaskComponent,
+    AboutComponent
   ],
   bootstrap: [AppComponent],
   providers: [TaskService, UiService]
