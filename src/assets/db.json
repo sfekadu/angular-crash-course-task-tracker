@@ -17,6 +17,12 @@
       "text": "Food Shopping",
       "day": "May 7th at 12:30pm",
       "reminder": false
+    },
+    {
+      "id": 3,
+      "text": "C-19 Vaccine 1/2 Dose",
+      "day": "May 21st at 12:5",
+      "reminder": false
     }
   ]
 }
