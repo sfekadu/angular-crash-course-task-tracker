@@ -12,6 +12,7 @@ import { TaskItemComponent } from './task-item/task-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TaskService } from './task.service';
 import { AddTaskComponent } from './add-task/add-task.component';
+import { UiService } from './ui.service';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, FontAwesomeModule, HttpClientModule],
@@ -25,6 +26,6 @@ import { AddTaskComponent } from './add-task/add-task.component';
     AddTaskComponent
   ],
   bootstrap: [AppComponent],
-  providers: [TaskService]
+  providers: [TaskService, UiService]
 })
 export class AppModule {}
