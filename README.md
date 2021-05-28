@@ -20,3 +20,6 @@ ng build
 [Understanding Subjects] (http://ncjamieson.com/understanding-subjects)
 
 [Object array with push](https://stackoverflow.com/questions/38225579/typescript-add-object-to-array-with-push)
+
+[Deleting array element]
+https://www.angularjswiki.com/angular/how-to-remove-an-element-from-array-in-angular-or-typescript/

@@ -40,6 +40,11 @@ export class TaskService {
     //const url = `${this.dbFile}/${task.id}`;
     //return this.http.delete<Task>(this.dbFile);
 
+    const aTask = TASKS.find(t => t.text === task.text);
+    TASKS.forEach( (element, index) => {
+      //if(element.id === task.id) delete TASKS[index];
+      if(element.text === task.text) TASKS.splice(index,1);
+    })
     const tasks = of(TASKS);
     return tasks; 
 
